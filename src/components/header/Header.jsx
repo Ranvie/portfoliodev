@@ -12,7 +12,7 @@ function header({pageTitle='Publicação', path='Home / Publicação'}) {
                 <SImg src={HamburguerBtnSvg} alt="Sidebar button" />
             </div>
             <div className='logo_text'>
-                <SImg src={DevLogoSvg} alt="Dev logo"/>
+                <SImg src={DevLogoSvg} alt="Dev logo" className='logo_img'/>
                 <STitle>{pageTitle}</STitle>
             </div>
             <div className='path'>

@@ -7,7 +7,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Header/>
-        <br></br>
         <PostEditor/>
     </React.StrictMode>
 );
