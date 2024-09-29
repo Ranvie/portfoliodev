@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const SGrid = styled.section`
+const SGrid = styled.div`
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 3;
@@ -10,6 +10,18 @@ const SGrid = styled.section`
     .title_dropbox{
         display: grid;
         grid-template-columns: 90% 10%;
+    }
+
+    .top_spacing_25px{
+        margin-top:25px;
+    }
+
+    .bottom_spacing_25px{
+        margin-bottom:25px;
+    }
+
+    .centralize{
+        justify-self:center;
     }
 `;
 
@@ -57,9 +69,23 @@ const STextAreaInput = styled.textarea`
     }
 `
 
+const SSubmitButton = styled.button`
+    width:500px;
+    height:70px;
+    color:#FFFFFF;
+    background-color:#699BF7;
+    border:none;
+    border-radius:40px;
+
+    &:hover{
+        cursor:pointer;
+    }
+`
+
 export {
     SGrid,
     STitleInput,
     SCategoryInput,
-    STextAreaLabel, STextAreaInput
+    STextAreaLabel, STextAreaInput,
+    SSubmitButton
 }

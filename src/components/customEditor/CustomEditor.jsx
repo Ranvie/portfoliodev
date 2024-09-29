@@ -10,10 +10,12 @@ import 'tinymce/skins/ui/oxide/skin.min.css';
 import 'tinymce/skins/ui/oxide/content.min.css';
 import { Editor } from '@tinymce/tinymce-react';
 
-function CustomEditor() {
+function CustomEditor({getContent}) {
     const [contentEditor, setContentEditor] = useState();
+    
     const handleEditorChange = (content, editor) => {
         setContentEditor(content);
+        getContent(content);
     }
 
     return (
